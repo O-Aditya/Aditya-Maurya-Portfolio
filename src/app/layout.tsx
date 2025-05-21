@@ -26,6 +26,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`} suppressHydrationWarning>
+      <head>
+      <link rel="icon" href="/favicon.ico" />
+      </head>
+      
       <body suppressHydrationWarning className="antialiased">
         <ClientBody>{children}</ClientBody>
         <Toaster position="top-right" />
